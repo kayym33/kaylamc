@@ -1,262 +1,33 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Kayla McDade's portfolio - software engineering student, JPMorgan Chase intern, and builder of thoughtful digital products.">
-  <title>Kayla McDade | Software Engineering Portfolio</title>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-v9AqWMMYjd4bBKy7GqCgruaIN22JnSg8lMNlNZ5SXoE='; style-src 'self' 'unsafe-inline'; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>kayla mcdade</title>
+  <meta name="description" content="Kayla McDade: software engineering student at Strathclyde and industrial placement intern at JPMorgan Chase. Projects: t1ld3, f1nanc3, weave.">
+  <meta name="theme-color" content="#E7E7DD" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121311" media="(prefers-color-scheme: dark)">
+  <style>html { background: #E7E7DD; } @media (prefers-color-scheme: dark) { html:not([data-theme="day"]) { background: #121311; } } html[data-theme="night"] { background: #121311; }</style>
+  <script>try { var t = localStorage.getItem("kaylamc.theme"); if (t === "day" || t === "night") document.documentElement.dataset.theme = t; } catch (e) {}</script>
+  <link rel="icon" href="favicon.svg">
   <link rel="stylesheet" href="style.css">
+  <script type="module" src="site.js"></script>
 </head>
 <body>
-  <div class="progress-bar" aria-hidden="true"><span></span></div>
-
-  <header class="site-header">
-    <div class="container nav">
-      <a class="logo" href="#top" aria-label="Kayla McDade home">Kayla McDade</a>
-      <nav class="site-nav" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <div class="nav-actions">
-        <button class="icon-button" id="themeToggle" type="button" aria-label="Toggle theme">Theme</button>
-        <a class="button button-secondary" href="#contact">Resume ready</a>
-      </div>
-    </div>
+  <pre class="noise" aria-hidden="true"></pre>
+  <header class="bar">
+    <a href="#" class="home">k<span class="one">4</span>yla</a>
+    <nav>
+      <a href="#projects">projects</a>
+      <a href="#skills">skills</a>
+      <button type="button" class="theme" aria-label="switch theme">auto</button>
+    </nav>
   </header>
-
-  <main id="top">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="tag">Software Engineering Student · JPMorgan Chase Intern</p>
-          <h1>heading heading heading ...</h1>
-          <p class="subtitle">
-            im kayla blah blah blah...
-          </p>
-          <div class="hero-actions">
-            <a class="button" href="#projects">Explore selected work</a>
-            <button class="button button-secondary" id="copyEmailHero" type="button">Copy email</button>
-          </div>
-          <div class="hero-pills" aria-label="Highlights">
-            <span>Full-stack problem solving</span>
-            <span>Internship experience</span>
-            <span>Recruiter-friendly storytelling</span>
-          </div>
-        </div>
-
-        <aside class="hero-panel card">
-          <p class="panel-label">Snapshot</p>
-          <div class="panel-item">
-            <span class="panel-kicker">Focus</span>
-            <strong>Software engineering, systems thinking, and product polish</strong>
-          </div>
-          <div class="panel-item">
-            <span class="panel-kicker">Current</span>
-            <strong>University of Strathclyde</strong>
-            <span>Building a BSc Software Engineering foundation with practical team experience.</span>
-          </div>
-          <div class="panel-item">
-            <span class="panel-kicker">Why this stands out</span>
-            <strong>It looks like a case study, not just a static resume.</strong>
-            <span>That matters when recruiters scan for clarity, judgment, and initiative.</span>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <section class="container section metrics">
-      <div class="metric card">
-        <span class="metric-label">Engineering style</span>
-        <strong>Practical, structured, and testable</strong>
-      </div>
-      <div class="metric card">
-        <span class="metric-label">Presentation style</span>
-        <strong>Clear hierarchy with recruiter-ready scanning</strong>
-      </div>
-      <div class="metric card">
-        <span class="metric-label">Developer candy</span>
-        <strong>Theme toggle, filters, copy actions, and scroll progress</strong>
-      </div>
-    </section>
-
-    <section id="about" class="container section split-section">
-      <div>
-        <p class="section-eyebrow">About</p>
-        <h2>about about about</h2>
-      </div>
-      <div class="card text-card">
-        <p>
-          p1
-        </p>
-        <p>
-          p2
-        </p>
-      </div>
-    </section>
-
-    <section class="container section two-column">
-      <div class="card">
-        <p class="section-eyebrow">Education</p>
-        <h2>University of Strathclyde</h2>
-        <p class="muted">BSc Software Engineering</p>
-        <ul class="feature-list">
-          <li>Grounding in algorithms, programming fundamentals, and collaborative development.</li>
-          <li>Designed to support both technical depth and practical delivery.</li>
-          <li>graduation: 2028</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <p class="section-eyebrow">Experience</p>
-        <h2>JPMorgan Chase & Co.</h2>
-        <p class="muted">Software Engineering Intern</p>
-        <ul class="feature-list">
-          <li>Exposure to real engineering workflows, review culture, and cross-functional delivery.</li>
-          <li>Good place to add quantified wins, tooling improvements, or anything you shipped end-to-end.</li>
-          <li>This section is intentionally shaped like an impact timeline so it is easy to sharpen later.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="projects" class="container section">
-      <div class="section-header">
-        <div>
-          <p class="section-eyebrow">Projects</p>
-          <h2>Projects!</h2>
-        </div>
-        <div class="filter-group" role="tablist" aria-label="Project filters">
-          <button class="filter-button is-active" type="button" data-filter="all">All</button>
-          <button class="filter-button" type="button" data-filter="web">Web</button>
-          <button class="filter-button" type="button" data-filter="systems">Systems</button>
-          <button class="filter-button" type="button" data-filter="data">Data</button>
-        </div>
-      </div>
-
-      <div class="project-grid">
-        <article class="card project-card" data-tags="web data">
-          <div class="project-topline">
-            <span class="project-badge">Case study template</span>
-            <span class="project-tag">Web</span>
-          </div>
-          <h3>Project with measurable impact</h3>
-          <p>
-            Use this card for a product or app where you can explain the problem, the architectural choice, and the result. That combination reads better than a generic feature list.
-          </p>
-          <ul class="project-points">
-            <li>Problem: what needed to be better.</li>
-            <li>Stack: the tools and libraries you chose.</li>
-            <li>Outcome: what changed for users or the team.</li>
-          </ul>
-          <a href="#contact">Share details →</a>
-        </article>
-
-        <article class="card project-card" data-tags="systems">
-          <div class="project-topline">
-            <span class="project-badge">Engineering depth</span>
-            <span class="project-tag">Systems</span>
-          </div>
-          <h3>Tooling, automation, or performance work</h3>
-          <p>
-            This slot is ideal for something a developer will appreciate: test automation, observability, build tooling, or a performance improvement with a clear before-and-after story.
-          </p>
-          <ul class="project-points">
-            <li>Show the constraint you were working under.</li>
-            <li>Show the trade-off you made.</li>
-            <li>Show what the improvement unlocked.</li>
-          </ul>
-          <a href="#contact">Explain the trade-offs →</a>
-        </article>
-
-        <article class="card project-card" data-tags="data web">
-          <div class="project-topline">
-            <span class="project-badge">High signal layout</span>
-            <span class="project-tag">Data</span>
-          </div>
-          <h3>Dashboard, analytics, or decision-support UI</h3>
-          <p>
-            Recruiters notice when a project has a clear user journey and a decision-making angle. Put the evidence here: charts, search, workflows, or anything that reduces friction.
-          </p>
-          <ul class="project-points">
-            <li>Clarity beats feature bloat.</li>
-            <li>Use one sentence for audience and one for outcome.</li>
-            <li>Keep the implementation notes concise and credible.</li>
-          </ul>
-          <a href="#contact">View repo →</a>
-        </article>
-      </div>
-    </section>
-
-    <section id="skills" class="container section split-section">
-      <div>
-        <p class="section-eyebrow">Skills</p>
-        <h2>Enough breadth to look versatile, with enough depth to look intentional.</h2>
-      </div>
-      <div class="card skill-matrix">
-        <div>
-          <h3>Languages</h3>
-          <div class="skills">
-            <span>Java</span>
-            <span>Python</span>
-            <span>C</span>
-            <span>Haskell</span>
-            <span>SQL</span>
-          </div>
-        </div>
-        <div>
-          <h3>Frameworks</h3>
-          <div class="skills">
-            <span>React</span>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-          </div>
-        </div>
-        <div>
-          <h3>Working style</h3>
-          <div class="skills">
-            <span>Git</span>
-            <span>Testing</span>
-            <span>Debugging</span>
-            <span>Documentation</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="container section contact-section">
-      <div>
-        <p class="section-eyebrow">Contact</p>
-        <h2>Make it easy to start a conversation.</h2>
-        <p class="muted">This section is designed for quick action: copy the email, open the links, or route straight to a hiring conversation.</p>
-      </div>
-      <div class="card contact-card">
-        <div class="contact-row">
-          <div>
-            <span class="panel-kicker">Email</span>
-            <strong>km@kaylamc.uk</strong>
-          </div>
-          <button class="button button-secondary" id="copyEmail" type="button">Copy email</button>
-        </div>
-        <div class="contact-links">
-          <a href="#" aria-label="GitHub profile">GitHub</a>
-          <a href="#" aria-label="LinkedIn profile">LinkedIn</a>
-          <a href="#top">Back to top</a>
-        </div>
-      </div>
-    </section>
+  <main>
+    <noscript><p>kayla mcdade: software engineering student and placement intern. this page needs javascript to show the rest.</p></noscript>
   </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© 2026 Kayla McDade</p>
-      <p>portfolio</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+  <footer>© <span class="year">2026</span> kayla mcdade · <a href="https://github.com/kayym33/kaylamc" target="_blank" rel="noopener noreferrer">this site's code ↗</a></footer>
 </body>
 </html>
